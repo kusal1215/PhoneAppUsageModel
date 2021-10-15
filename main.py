@@ -45,9 +45,9 @@ def predict_depression(data:PhoneUsageIP):
     print(mp.predict([[Age,Gender,No_Of_Social_Media_Apps,Social_Media_App_Usage,Gaming_App_usage,Night_Time_Use]]))
     prediction = mp.predict([[Age,Gender,No_Of_Social_Media_Apps,Social_Media_App_Usage,Gaming_App_usage,Night_Time_Use]])
     if(prediction[0] == 0):
-        prediction="Not Depressed"
+        prediction="Normal"
     else:
-        prediction="Depressed"
+        prediction="Not Optimal"
     return {
         'prediction': prediction
     }
